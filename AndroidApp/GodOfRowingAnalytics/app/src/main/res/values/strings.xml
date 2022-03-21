@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">GodOfRowing Analytics</string>
+
+    // Activity parameters/Indicators
+    <string name="activity_parameter_default">> Distance</string>
+
+    <string name="activity_parameter_distance">Distance</string>
+    <string name="activity_parameter_heart_rate">Heart rate</string>
+
+    //Activity parameters/Indicators dimension units long
+    <string name="activity_parameter_unit_default">> Meters</string>
+    <string name="activity_parameter_unit_default_short">m.</string>
+    <string name="activity_parameter_unit_meter_per_sec">meter per second</string>
+    <string name="activity_parameter_unit_meters">Meters</string>
+    <string name="activity_parameter_unit_kilometers">km</string>
+    <string name="activity_parameter_unit_heart_beats_min">per minute</string>
+    <string name="activity_parameter_unit_time_per_meters">time per 500m</string>
 </resources>
