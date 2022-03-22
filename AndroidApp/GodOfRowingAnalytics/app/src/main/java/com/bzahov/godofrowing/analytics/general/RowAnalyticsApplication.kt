@@ -1,4 +1,4 @@
-package com.bzahov.godofrowing.analytics
+package com.bzahov.godofrowing.analytics.general
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

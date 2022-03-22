@@ -5,7 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name=".RowAnalyticsApplication"
+        android:name=".general.RowAnalyticsApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_round_rowing_24"
         android:label="@string/app_name"
@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GodOfRowingAnalytics">
         <activity
-            android:name=".MainActivity"
+            android:name=".general.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.GodOfRowingAnalytics">

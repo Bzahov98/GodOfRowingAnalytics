@@ -1,4 +1,4 @@
-package com.bzahov.godofrowing.analytics.di
+package com.bzahov.godofrowing.analytics.general.di
 
 import dagger.Module
 import dagger.hilt.InstallIn
