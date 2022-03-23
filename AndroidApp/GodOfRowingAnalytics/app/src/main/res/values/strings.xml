@@ -15,4 +15,18 @@
     <string name="activity_parameter_unit_kilometers">km</string>
     <string name="activity_parameter_unit_heart_beats_min">per minute</string>
     <string name="activity_parameter_unit_time_per_meters">time per 500m</string>
+
+    // Auth
+    <string name="auth_username">Username</string>
+    <string name="auth_password">Password</string>
+    <string name="auth_login">Log In</string>
+    <string name="auth_signup">Sign Up</string>
+    <string name="auth_password_forgot">Forgot Password?</string>
+        // Login
+    <string name="login_welcome_message">Welcome Back!</string>
+
+    // Images Content descriptions
+    <string name="content_descr_password_toggle">Password Toggle</string>
+    <string name="auth_wrong_creds">Wrong Email or password!!!</string>
+
 </resources>

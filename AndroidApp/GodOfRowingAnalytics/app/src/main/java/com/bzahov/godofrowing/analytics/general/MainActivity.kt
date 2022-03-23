@@ -1,4 +1,4 @@
-package com.bzahov.godofrowing.analytics
+package com.bzahov.godofrowing.analytics.general
 
 import android.os.Bundle
 import android.util.Log
@@ -11,13 +11,11 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.currentCompositionLocalContext
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.bzahov.godofrowing.analytics.navigation.RowingNavigation
 import com.bzahov.godofrowing.analytics.ui.theme.GodOfRowingAnalyticsTheme
-import com.google.android.material.color.MaterialColors
 import com.google.firebase.firestore.FirebaseFirestore
 import dagger.hilt.android.AndroidEntryPoint
 
