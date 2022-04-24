@@ -29,4 +29,13 @@
     <string name="content_descr_password_toggle">Password Toggle</string>
     <string name="auth_wrong_creds">Wrong Email or password!!!</string>
 
+    // Next time
+    <string name="text_time_future">In the future</string>
+    <string name="text_time_just_now">Right now</string>
+    <string name="text_time_one_minute_ago">A minute ago</string>
+    <string name="text_time_more_minutes_ago">%d minutes ago</string>
+    <string name="text_time_one_hour_ago">One hour ago</string>
+    <string name="text_time_more_hour_ago">%d hours ago</string>
+    <string name="text_time_yesterday">Yesterday</string>
+    <string name="text_time_days_Ago">%d days ago</string>
 </resources>
