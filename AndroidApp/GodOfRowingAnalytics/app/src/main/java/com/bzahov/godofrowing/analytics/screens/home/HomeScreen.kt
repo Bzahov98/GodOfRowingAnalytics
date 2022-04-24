@@ -14,7 +14,8 @@ import com.bzahov.godofrowing.analytics.navigation.AppScreen.Companion.getCurren
 @Composable
 fun HomeScreen(
     navController: NavController,
-    viewModel: HomeScreenViewModel = hiltViewModel()
+    viewModel: HomeScreenViewModel = hiltViewModel(),
+    setRightTheme: () -> Unit
 ) {
 
     Text(text = getCurrentScreenByNavController(navController).title)

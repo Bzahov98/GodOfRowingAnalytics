@@ -10,7 +10,7 @@ import com.bzahov.godofrowing.analytics.navigation.AppScreen.Companion.getCurren
 @Composable
 fun TeamScreen(
     navController: NavController,
-    viewModel: TeamScreenViewModel = hiltViewModel()
+    viewModel: () -> Unit = hiltViewModel()
 ) {
     Text(text = getCurrentScreenByNavController(navController).title)
 }

@@ -12,6 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
 
@@ -42,22 +43,23 @@ fun CardLayoutWithImage(imageId: Int, content: @Composable() () -> Unit) {
     }
 }
 
+@Preview
 @Composable
-fun CardLayout(upperContent: @Composable() () -> Unit, content: @Composable() () -> Unit) {
-    Scaffold(backgroundColor = MaterialTheme.colors.primary) {
+fun CardLayout(upperContent: @Composable (modifier : Modifier) -> Unit = @Composable{}, content: @Composable() () -> Unit  = @Composable{}) {
+    Scaffold(backgroundColor = MaterialTheme.colors.background) {
         Column(
             Modifier.fillMaxSize(),
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Top
         ) {
 
-            upperContent ()
+            upperContent (modifier = Modifier.weight(1f))
 
             Card(
                 Modifier
-                    .weight(2f)
+                    .weight(3f)
                     .padding(8.dp),
-                shape = RoundedCornerShape(32.dp),
+                shape = RoundedCornerShape(topStart = 16.dp, topEnd = 16.dp),
                 content = content
             )
         }

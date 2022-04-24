@@ -4,6 +4,8 @@ import android.os.Bundle
 import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.appcompat.app.AppCompatDelegate
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -24,10 +26,24 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
+            val currentTheme = isSystemInDarkTheme()
+            val toggleTheme: () -> Unit = {
+                if (currentTheme) setDayTheme() else setDarkTheme()
+            }
             MyApp {
-                LoadNavigation()
+                Surface(color = MaterialTheme.colors.background) {
+                    LoadNavigation(toggleTheme)
+                }
             }
         }
+    }
+
+    private fun setDayTheme() {
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+    }
+
+    private fun setDarkTheme() {
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
     }
 
     @Composable
@@ -75,7 +91,7 @@ fun MyApp(content: @Composable () -> Unit) {
 }
 
 @Composable
-fun LoadNavigation() {
+fun LoadNavigation(toggleTheme: () -> Unit = {}) {
 
     Surface(color = MaterialTheme.colors.background,
         modifier = Modifier.fillMaxSize(), content = {
@@ -83,7 +99,7 @@ fun LoadNavigation() {
                 verticalArrangement = Arrangement.Center,
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
-                RowingNavigation()
+                RowingNavigation(toggleTheme)
             }
         })
 

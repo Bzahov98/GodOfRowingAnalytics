@@ -1,7 +1,6 @@
 package com.bzahov.godofrowing.analytics.navigation
 
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -23,7 +22,7 @@ import com.bzahov.godofrowing.analytics.screens.team.TeamScreen
 import com.bzahov.godofrowing.analytics.screens.trainingplan.TrainingPlanScreen
 
 @Composable
-fun RowingNavigation() {
+fun RowingNavigation(toggleTheme: () -> Unit) {
     val navController = rememberNavController()
     NavHost(
         navController = navController,
@@ -35,7 +34,7 @@ fun RowingNavigation() {
         }
         composable(AppScreen.Home.route) {
             val homeViewModel = hiltViewModel<HomeScreenViewModel>()
-            HomeScreen(navController = navController, viewModel = homeViewModel)
+            HomeScreen(navController = navController, viewModel = homeViewModel,toggleTheme)
         }
 
         composable(AppScreen.Search.route) {

@@ -18,6 +18,7 @@ import com.bzahov.godofrowing.analytics.R
 @Preview
 @Composable
 fun RowingLogoImageGallery(modifier: Modifier = Modifier, imageId: Int = R.drawable.ic_google_logo) {
+
     Image(
         painter = painterResource(id = imageId),
         contentDescription = "App Logo",

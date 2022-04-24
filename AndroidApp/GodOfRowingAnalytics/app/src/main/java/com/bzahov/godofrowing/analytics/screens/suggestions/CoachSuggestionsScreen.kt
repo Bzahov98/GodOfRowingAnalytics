@@ -9,7 +9,7 @@ import com.bzahov.godofrowing.analytics.navigation.AppScreen.Companion.getCurren
 @Composable
 fun CoachSuggestionsScreen(
     navController: NavController,
-    viewModel: CoachSuggestionsScreenViewModel = hiltViewModel()
+    viewModel: () -> Unit = hiltViewModel()
 ) {
     Text(text = getCurrentScreenByNavController(navController).title + " screen")
 }
