@@ -1,9 +1,14 @@
 # GodOfRowingAnalytics
  🚣‍♂️ 📈 💻 🇧🇬
  
-My current project, which I started to develop, for my diplom work at my University TU-Sofia with title: 
+My first idea of a project, which I started to develop, for my diploma work at my University TU-Sofia titled: 
 
 <i><b>Analysis and control for Rowing sport process, with Android App and Web Server.</b></i>
+
+### Later on, I decided to do another project [(can be found HERE)](https://github.com/Bzahov98/RowingBG_Achievements) for my diploma work and leave this for later. Its title is: 
+
+[<i><b>Platform for information of BFG(Bulgarian Rowing Federation), with Android App.</b></i>](https://github.com/Bzahov98/RowingBG_Achievements)
+
 
 ## Documentation and Presentation
 
